@@ -1,0 +1,58 @@
+{
+  "name": "Rise-N-ui",
+  "version": "1.0.0",
+  "main": "packages/index.js",
+  "description": "j-ui is a h5 ui component for vue",
+  "author": "郭佳兴 <jiaxing2658@sina.com>",
+  "license": "jiaxing",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "fast-vue-md-loader": "^1.0.3",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-lazyload": "1.2.3",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1",
+    "precss": "^3.1.2",
+    "stylus-loader": "^3.0.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

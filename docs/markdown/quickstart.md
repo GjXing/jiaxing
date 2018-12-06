@@ -18,14 +18,14 @@ vue create hello-world
 #### NPM
 
 ```shell
-npm i jiaxing-N-ui -S
+npm i jiaxing-n-ui -S
 npm i vue-lazyload -S
 ```
 
 #### YARN
 
 ```shell
-yarn add jiaxing-N-ui
+yarn add jiaxing-n-ui
 yarm add vue-lazyload
 ```
 
@@ -37,9 +37,9 @@ yarm add vue-lazyload
 
 ```js
 
-    import Xui from 'jiaxing-N-ui' // 组件库
-    import 'jiaxing-N-ui/packages/x-css/lib/index.css' //样式
-    Vue.use(Xui) // 使用
+    import Nui from 'jiaxing-n-ui' // 组件库
+    import 'jiaxing-n-ui/x-css/lib/index.css' //样式
+    Vue.use(Nui) // 使用
 
 ```
 
@@ -50,9 +50,9 @@ yarm add vue-lazyload
 在不使用插件的情况下，可以手动引入需要的组件
 
 ```js
-import {Button} from 'jiaxing-N-ui';
-import 'jiaxing-N-ui/packages/x-css/lib/base.css';
-import 'jiaxing-N-ui/packages/x-css/lib/button.css';
+import {Button} from 'jiaxing-n-ui';
+import 'jiaxing-n-ui/x-css/lib/base.css';
+import 'jiaxing-n-ui/x-css/lib/button.css';
 ```
 
 
@@ -63,8 +63,8 @@ import 'jiaxing-N-ui/packages/x-css/lib/button.css';
 
 x-ui 中的样式默认使用`px`作为单位，如果需要使用`rem`单位，推荐使用以下两个工具
 
-- [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) 是一款 postcss 插件，用于将单位转化为 rem
-- [lib-flexible](https://github.com/amfe/lib-flexible) 用于设置 rem 基准值
+
+
 
 下面提供了一份基本的 postcss 配置，可以在此配置的基础上根据项目需求进行修改
 

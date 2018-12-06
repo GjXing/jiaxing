@@ -1,5 +1,5 @@
 ## Built-in Style
-Vant contains some common styles that can be used directly by the className.
+NUI contains some common styles that can be used directly by the className.
 
 ### Text ellipsis
 When the text content length exceeds the maximum container width, the excess text is automatically omitted.

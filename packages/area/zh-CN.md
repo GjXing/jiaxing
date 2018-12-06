@@ -4,7 +4,7 @@
 ### 使用指南
 
 ```javascript
-import { Area } from 'vant';
+import { Area } from 'jiaxing-n-ui';
 
 Vue.use(Area);
 ```
@@ -99,8 +99,6 @@ Vue.use(Area);
   }
 }
 ```
-
-完整数据见 [Area.json](https://github.com/youzan/vant/blob/dev/packages/area/demo/area.js)
 
 #### 点击完成时返回的数据格式
 

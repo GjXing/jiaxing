@@ -4,7 +4,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 ### Install
 
 ``` javascript
-import { Area } from 'vant';
+import { Area } from 'jiaxing-n-ui';
 
 Vue.use(Area);
 ```
@@ -96,7 +96,7 @@ Example of `AreaList`
 }
 ```
 
-All code of China: [Area.json](https://github.com/youzan/vant/blob/dev/packages/area/demo/area-en.js)
+
 
 #### argument of callback function confirm
 An array contains selected area objects.

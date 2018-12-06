@@ -15,11 +15,11 @@ npm install vue-lazyload --save
 
 ```js
 import Nui from 'jiaxing-n-ui' // 组件库
-import 'jiaxing-n-ui/packages/x-css/lib/index.css' //样式
+import 'jiaxing-n-ui/x-css/lib/index.css' //样式
 Vue.use(Nui) // 使用
 ```
 
-官网地址：[https://gjxing.github.io/jiaxing/](https://gjxing.github.io/xui)
+官网地址：[https://gjxing.github.io/jiaxing/](https://gjxing.github.io/jiaxing)
 
 
 

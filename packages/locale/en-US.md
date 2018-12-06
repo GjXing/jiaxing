@@ -1,12 +1,12 @@
 ## Internationalization
-The default language of Vant is Chinese. If you want to use other languages, you can follow the instructions below.
+The default language of NUI is Chinese. If you want to use other languages, you can follow the instructions below.
 
 ### Switch languages
-Vant supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to diffrent languages.
+NUI supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to diffrent languages.
 
 ```js
 import { Locale } from 'jiaxing-n-ui';
-import enUS from 'vant/lib/locale/lang/en-US';
+import enUS from 'jiaxing-n-ui/packages/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```

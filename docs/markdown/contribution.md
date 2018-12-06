@@ -1,8 +1,8 @@
 ## 开发指南
 
-首先感谢你使用 Xui。
+首先感谢你使用 Nui。
 
-以下是关于向 Xui 提交代码的指南。在向 Xui 提交 Issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
+以下是关于向 Nui 提交代码的指南。在向 Nui 提交 Issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
 
 ### Issue 规范
 
@@ -18,12 +18,12 @@
 ### 初始化项目
 
 ```bash
-git clone git@github.com:youzan/Xui.git
+git clone git@github.com:GjXing/jiaxing.git
 
-cd Xui
+cd Nui
 
 # 安装依赖
-npm run bootstrap
+npm i
 
 # 本地开发模式
 npm run dev
@@ -34,33 +34,31 @@ npm run dev
 ### 目录结构
 
 - 仓库的组件代码位于 packages 下，每个组件一个文件夹
-- 组件样式代码位于 packages/Xui-css/src 下，Xui-css 也会在发布时单独发包
+- 组件样式代码位于 packages/x-css/lib 下，x-css 也会在发布时单独发包
 - docs 目录下是文档网站的代码，本地开发时可以在目录下运行 npm run dev 开启文档网站
 
 项目目录大致如下：
 
 ```
-Xui
+Nui
 ├─ build            # 构建脚本
 ├─ docs             # 文档网站
 ├─ packages         # 组件文件
-├─ test             # 单元测试
-└─ types            # 类型定义
+
+
 ```
 
 ### 添加新组件
 
-添加新组件时，请按照下面的目录结构组织文件，并在 `docs/src/doc.config.js` 中配置组件名称
+添加新组件时，请按照下面的目录结构组织文件，并在 `docs/src/nav.config.js` 中配置组件名称
 
 ```
 packages
 |- button
 |  ├─ demo        # 示例代码
-|  ├─ test        # 单元测试
 |  ├─ zh-CN.md    # 中文文档
-|  ├─ en-US.md    # 英文文档
 |  └─ index.vue   # 组件入口
-└─ Xui-css
+└─ X-css
    ├─ index.css   # 样式入口
    └─ button.css  # 组件样式
 ```
@@ -129,7 +127,7 @@ import Button from '../button';
 
 #### 组件创建
 
-Xui 中的组件会通过 `create` 方法统一创建，`create` 方法会在选项文件中注入基本的依赖和方法。
+Nui 中的组件会通过 `create` 方法统一创建，`create` 方法会在选项文件中注入基本的依赖和方法。
 
 ```js
 import create from '../utils/create';

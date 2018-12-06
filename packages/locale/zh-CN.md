@@ -1,12 +1,12 @@
 ## 国际化
-Vant 默认采用中文作为语言，如果需要使用其他语言，可以参考下面的方案
+NUI 默认采用中文作为语言，如果需要使用其他语言，可以参考下面的方案
 
 ### 多语言切换
-Vant 通过 Locale 组件实现多语言支持，使用 `Locale.use` 方法可以切换当前使用的语言。
+NUI 通过 Locale 组件实现多语言支持，使用 `Locale.use` 方法可以切换当前使用的语言。
 
 ```js
 import { Locale } from 'jiaxing-n-ui';
-import enUS from 'vant/lib/locale/lang/en-US';
+import enUS from 'jiaxing-n-ui/packages/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```
@@ -38,5 +38,3 @@ Locale.add(messages);
 | 英语 | en-US |
 | 繁體中文 | zh-HK |
 | 土耳其语 | tr-TR |
-
-在 [这里](https://github.com/youzan/vant/tree/dev/packages/locale/lang) 查看所有的 i18n 配置文件。

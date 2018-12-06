@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Tab, Tabs } from 'jiaxing-N-ui';
+import { Tab, Tabs } from 'jiaxing-n-ui';
 
 Vue.use(Tab).use(Tabs);
 ```

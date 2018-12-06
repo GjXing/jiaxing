@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Loading } from 'jiaxing-N-ui';
+import { Loading } from 'jiaxing-n-ui';
 
 Vue.use(Loading);
 ```

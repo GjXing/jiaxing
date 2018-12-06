@@ -4,8 +4,8 @@
       <field
         v-model="data.name"
         clearable
-        :label="$t('name')"
-        :placeholder="$t('namePlaceholder')"
+        :label="name"
+        :placeholder="namePlaceholder"
         :error="errorInfo.name"
         @focus="onFocus('name')"
       />
@@ -13,21 +13,24 @@
         v-model="data.tel"
         clearable
         type="tel"
-        :label="$t('tel')"
-        :placeholder="$t('telPlaceholder')"
+        :label="tel"
+        :placeholder="telPlaceholder"
         :error="errorInfo.tel"
         @focus="onFocus('tel')"
       />
       <field
         v-show="showArea"
         readonly
-        :label="$t('area')"
-        :placeholder="$t('areaPlaceholder')"
+        :label="area"
+        :placeholder="areaPlaceholder"
         :value="areaText"
         @click="showAreaPopup = true"
       />
       <address-edit-detail
         v-show="showDetail"
+
+        :label='addressdetail'
+        :placeholder='addressplaceholder'
         :focused="detailFocused"
         :value="data.addressDetail"
         :error="errorInfo.addressDetail"
@@ -45,8 +48,8 @@
         v-model="data.postalCode"
         type="tel"
         maxlength="6"
-        :label="$t('postal')"
-        :placeholder="$t('postal')"
+        :label="postal"
+        :placeholder="postal"
         :error="errorInfo.postalCode"
         @focus="onFocus('postalCode')"
       />
@@ -55,7 +58,7 @@
         v-if="showSetDefault"
         v-show="!hideBottomFields"
         v-model="data.isDefault"
-        :title="$t('defaultAddress')"
+        :title="defaultAddress"
         @change="$emit('change-default', $event)"
       />
     </cell-group>
@@ -163,6 +166,22 @@ export default create({
       data: {},
       showAreaPopup: false,
       detailFocused: false,
+
+    addressdetail: '详细地址',
+    addressplaceholder: '街道门牌、楼层房间号等信息',
+
+
+       name: '姓名',
+  tel: '电话',
+  area: '地区',
+    postal: '邮政编码',
+    areaEmpty: '请选择地区',
+    addressEmpty: '请填写详细地址',
+    postalEmpty: '邮政编码格式不正确',
+    defaultAddress: '设为默认收货地址',
+    telPlaceholder: '收货人手机号',
+    namePlaceholder: '收货人姓名',
+    areaPlaceholder: '选择省 / 市 / 区',
       errorInfo: {
         tel: false,
         name: false,

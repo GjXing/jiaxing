@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { AddressList } from 'healen-x-ui';
+import { AddressList } from 'jiaxing-n-ui';
 
 Vue.use(AddressList);
 ```

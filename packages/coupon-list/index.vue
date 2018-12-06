@@ -6,7 +6,7 @@
       clearable
       :border="false"
       :class="b('field')"
-      :placeholder="inputPlaceholder || $t('placeholder')"
+      :placeholder="inputPlaceholder || placeholder"
       :maxlength="20"
     >
       <x-button
@@ -14,9 +14,9 @@
         size="small"
         type="danger"
         :class="b('exchange')"
-        :text="exchangeButtonText || $t('exchange')"
+        :text="exchangeButtonText || exchange"
         :loading="exchangeButtonLoading"
-        :disabled="buttonDisabled"
+
         @click="onClickExchangeButton"
       />
     </field>
@@ -33,7 +33,7 @@
           />
           <div v-if="!coupons.length" :class="b('empty')">
             <img src="https://img.yzcdn.cn/v2/image/wap/trade/new_order/empty@2x.png" >
-            <p>{{ $t('empty') }}</p>
+            <p>{{ empty }}</p>
           </div>
         </div>
       </tab>
@@ -47,7 +47,7 @@
           />
           <div v-if="!disabledCoupons.length" :class="b('empty')">
             <img src="https://img.yzcdn.cn/v2/image/wap/trade/new_order/empty@2x.png" >
-            <p>{{ $t('empty') }}</p>
+            <p>{{ empty}}</p>
           </div>
         </div>
       </tab>
@@ -56,7 +56,7 @@
       v-show="showCloseButton"
       size="large"
       :class="b('close')"
-      :text="closeButtonText || $t('close')"
+      :text="closeButtonText || close"
       @click="$emit('change', -1)"
     />
   </div>
@@ -140,11 +140,11 @@ export default create({
     },
 
     title() {
-      return `${this.$t('enable')} (${this.coupons.length})`;
+      return `${this.enable} (${this.coupons.length})`;
     },
 
     disabledTitle() {
-      return `${this.$t('disabled')} (${this.disabledCoupons.length})`;
+      return `${this.disabled} (${this.disabledCoupons.length})`;
     },
 
     listStyle() {

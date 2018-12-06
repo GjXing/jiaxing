@@ -2,7 +2,7 @@
   <cell-group :class="b()" :border="border">
     <cell
       :title="title || $t('title')"
-      :value="value"
+      :value="values"
       :is-link="editable"
       @click="$emit('click')"
     />
@@ -20,7 +20,14 @@ export default create({
   },
 
   props: {
-    title: String,
+    title:  {
+      type: String,
+      default: '优惠券'
+    },
+    values:  {
+      type: String,
+      default: '你有 2个可用优惠'
+    },
     border: {
       type: Boolean,
       default: true

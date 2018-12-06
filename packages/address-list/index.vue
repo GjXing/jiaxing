@@ -41,16 +41,13 @@ import create from '../utils/create';
 import RadioGroup from '../radio-group';
 import VanButton from '../button';
 import AddressItem from './Item';
-
 export default create({
   name: 'address-list',
-
   components: {
     RadioGroup,
     VanButton,
     AddressItem
   },
-
   props: {
     disabledText: String,
     addButtonText: String,

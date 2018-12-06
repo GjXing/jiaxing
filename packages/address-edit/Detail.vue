@@ -10,8 +10,8 @@
       maxlength="200"
       :value="value"
       :error="error"
-      :label="$t('label')"
-      :placeholder="$t('placeholder')"
+      :label="label"
+      :placeholder="placeholder"
     >
       <span
         v-if="showIcon && isAndroid"
@@ -19,11 +19,11 @@
         :class="b('finish')"
         @click="$refs.field.blur()"
       >
-        {{ $t('complete') }}
+        {{ complete }}
       </span>
     </field>
     <cell
-      v-if="showSearchList"
+
       v-for="express in searchResult"
       :key="express.name + express.address"
       :title="express.name"
@@ -53,6 +53,8 @@ export default create({
     focused: Boolean,
     detailRows: Number,
     searchResult: Array,
+    label:String,
+    placeholder:String,
     showSearchResult: Boolean
   },
 

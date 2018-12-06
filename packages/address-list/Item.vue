@@ -20,20 +20,16 @@
 <script>
 import Radio from '../radio';
 import create from '../utils/create';
-
 export default create({
   name: 'address-item',
-
   components: {
     Radio
   },
-
   props: {
     data: Object,
     disabled: Boolean,
     switchable: Boolean
   },
-
   methods: {
     onSelect() {
       if (this.switchable) {

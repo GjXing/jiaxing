@@ -7,10 +7,10 @@
     :icon="type === 'edit' ? 'contact' : 'add2'"
     @click="onClick"
   >
-    <template v-if="type === 'add'">{{ addText || $t('addText') }}</template>
+    <template v-if="type === 'add'">{{ addText || addText }}</template>
     <template v-else>
-      <div>{{ $t('name') }}：{{ name }}</div>
-      <div>{{ $t('tel') }}：{{ tel }}</div>
+      <div>{{ name }}：{{ name }}</div>
+      <div>{{ tel }}：{{ tel }}</div>
     </template>
   </cell>
 </template>

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Icon } from 'jiaxing-N-ui';
+import { Icon } from 'jiaxing-n-ui';
 
 Vue.use(Icon);
 ```

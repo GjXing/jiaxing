@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { Pagination } from 'jiaxing-N-ui';
+import { Pagination } from 'jiaxing-n-ui';
 
 Vue.use(Pagination);
 ```

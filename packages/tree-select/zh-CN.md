@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { TreeSelect } from 'jiaxing-N-ui';
+import { TreeSelect } from 'jiaxing-n-ui';
 
 Vue.use(TreeSelect);
 ```

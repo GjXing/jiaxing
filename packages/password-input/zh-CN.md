@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { PasswordInput, NumberKeyboard } from 'jiaxing-N-ui';
+import { PasswordInput, NumberKeyboard } from 'jiaxing-n-ui';
 
 Vue.use(PasswordInput).use(NumberKeyboard);
 ```

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Popup } from 'jiaxing-N-ui';
+import { Popup } from 'jiaxing-n-ui';
 
 Vue.use(Popup);
 ```

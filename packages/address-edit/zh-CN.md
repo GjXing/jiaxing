@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { AddressEdit } from 'jiaxing-N-ui';
+import { AddressEdit } from 'jiaxing-n-ui';
 
 Vue.use(AddressEdit);
 ```

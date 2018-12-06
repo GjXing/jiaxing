@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Stepper } from 'jiaxing-N-ui';
+import { Stepper } from 'jiaxing-n-ui';
 
 Vue.use(Stepper);
 ```

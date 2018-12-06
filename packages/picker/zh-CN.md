@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { Picker } from 'jiaxing-N-ui';
+import { Picker } from 'jiaxing-n-ui';
 
 Vue.use(Picker);
 ```

@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { List } from 'jiaxing-N-ui';
+import { List } from 'jiaxing-n-ui';
 
 Vue.use(List);
 ```

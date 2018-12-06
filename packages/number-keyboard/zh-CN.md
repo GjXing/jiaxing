@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { NumberKeyboard } from 'jiaxing-N-ui';
+import { NumberKeyboard } from 'jiaxing-n-ui';
 
 Vue.use(NumberKeyboard);
 ```

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Actionsheet } from 'jiaxing-N-ui';
+import { Actionsheet } from 'jiaxing-n-ui';
 
 Vue.use(Actionsheet);
 ```

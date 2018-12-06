@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Rate } from 'jiaxing-N-ui';
+import { Rate } from 'jiaxing-n-ui';
 
 Vue.use(Rate);
 ```

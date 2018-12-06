@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { SubmitBar } from 'jiaxing-N-ui';
+import { SubmitBar } from 'jiaxing-n-ui';
 
 Vue.use(SubmitBar);
 ```

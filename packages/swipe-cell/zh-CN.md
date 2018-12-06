@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { SwipeCell } from 'jiaxing-N-ui';
+import { SwipeCell } from 'jiaxing-n-ui';
 
 Vue.use(SwipeCell);
 ```

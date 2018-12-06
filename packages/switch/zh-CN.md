@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Switch } from 'jiaxing-N-ui';
+import { Switch } from 'jiaxing-n-ui';
 
 Vue.use(Switch);
 ```

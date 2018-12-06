@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Tag } from 'jiaxing-N-uihealen-x-ui';
+import { Tag } from 'jiaxing-n-uihealen-x-ui';
 
 Vue.use(Tag);
 ```

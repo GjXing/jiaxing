@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { ContactCard, ContactList, ContactEdit } from 'jiaxing-N-ui';
+import { ContactCard, ContactList, ContactEdit } from 'jiaxing-n-ui';
 
 Vue
   .use(ContactCard)

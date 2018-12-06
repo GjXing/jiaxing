@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Slider } from 'jiaxing-N-ui';
+import { Slider } from 'jiaxing-n-ui';
 
 Vue.use(Slider);
 ```

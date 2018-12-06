@@ -3,7 +3,7 @@
 
 ### 使用指南
 ``` javascript
-import { DatetimePicker } from 'jiaxing-N-ui';
+import { DatetimePicker } from 'jiaxing-n-ui';
 
 Vue.use(DatetimePicker);
 ```

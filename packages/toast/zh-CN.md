@@ -3,7 +3,7 @@
 ### 使用指南
 
 ```javascript
-import { Toast } from 'jiaxing-N-ui';
+import { Toast } from 'jiaxing-n-ui';
 
 Vue.use(Toast);
 ```

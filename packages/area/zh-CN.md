@@ -4,7 +4,7 @@
 ### 使用指南
 
 ```javascript
-import { Area } from 'jiaxing-N-ui';
+import { Area } from 'jiaxing-n-ui';
 
 Vue.use(Area);
 ```

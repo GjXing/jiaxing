@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Collapse, CollapseItem } from 'jiaxing-N-ui';
+import { Collapse, CollapseItem } from 'jiaxing-n-ui';
 
 Vue.use(Collapse).use(CollapseItem);
 ```

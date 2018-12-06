@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Panel } from 'jiaxing-N-ui';
+import { Panel } from 'jiaxing-n-ui';
 
 Vue.use(Panel);
 ```

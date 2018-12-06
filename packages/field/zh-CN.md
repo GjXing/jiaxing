@@ -4,7 +4,7 @@
 
 ### 使用指南
 ``` javascript
-import { Field } from 'jiaxing-N-ui';
+import { Field } from 'jiaxing-n-ui';
 
 Vue.use(Field);
 ```

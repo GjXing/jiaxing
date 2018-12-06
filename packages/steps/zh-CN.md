@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Step, Steps } from 'jiaxing-N-ui';
+import { Step, Steps } from 'jiaxing-n-ui';
 
 Vue.use(Step).use(Steps);
 ```

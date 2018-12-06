@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { RadioGroup, Radio } from 'jiaxing-N-ui';
+import { RadioGroup, Radio } from 'jiaxing-n-ui';
 
 Vue.use(RadioGroup);
 Vue.use(Radio);

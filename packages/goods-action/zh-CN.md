@@ -6,7 +6,7 @@ import {
   GoodsAction,
   GoodsActionBigBtn,
   GoodsActionMiniBtn
-} from 'jiaxing-N-ui';
+} from 'jiaxing-n-ui';
 
 Vue
   .use(GoodsAction)

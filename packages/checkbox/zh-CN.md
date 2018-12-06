@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Checkbox, CheckboxGroup } from 'jiaxing-N-ui'
+import { Checkbox, CheckboxGroup } from 'jiaxing-n-ui'
 Vue.use(Checkbox).use(CheckboxGroup);
 ```
 

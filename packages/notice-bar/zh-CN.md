@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { NoticeBar } from 'jiaxing-N-ui';
+import { NoticeBar } from 'jiaxing-n-ui';
 
 Vue.use(NoticeBar);
 ```
@@ -50,7 +50,7 @@ Vue.use(NoticeBar);
 | delay | 动画延迟时间 (s) | `Number` | `1` | - |
 | speed | 滚动速率 (px/s) | `Number` | `50` | - |
 | scrollable | 是否在长度溢出时滚动播放 | `Boolean` | `true` | - |
-| left-icon | icon名称[现有图标](https://healen.github.io/xui/#/demo/icon) | `String` | - | - |
+| left-icon | icon名称[现有图标](https://gjxing.github.io/jiaxing/#/demo/icon) | `String` | - | - |
 | color | 文本颜色 | `String` | `#f60` | - |
 | background | 滚动条背景 | `String` | `#fff7cc` | - |
 

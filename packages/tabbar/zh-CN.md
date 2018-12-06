@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Tabbar, TabbarItem } from 'jiaxing-N-ui';
+import { Tabbar, TabbarItem } from 'jiaxing-n-ui';
 
 Vue.use(Tabbar).use(TabbarItem);
 ```

@@ -6,7 +6,7 @@
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'jiaxing-N-ui';
+import { Lazyload } from 'jiaxing-n-ui';
 
 // options 为可选参数，无则不传
 Vue.use(Lazyload, options);

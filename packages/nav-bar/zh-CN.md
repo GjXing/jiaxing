@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { NavBar } from 'jiaxing-N-ui';
+import { NavBar } from 'jiaxing-n-ui';
 
 Vue.use(NavBar);
 ```

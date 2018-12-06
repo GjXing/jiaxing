@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Uploader } from 'jiaxing-N-ui';
+import { Uploader } from 'jiaxing-n-ui';
 
 Vue.use(Uploader);
 ```

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Cell, CellGroup } from 'jiaxing-N-ui';
+import { Cell, CellGroup } from 'jiaxing-n-ui';
 
 Vue.use(Cell).use(CellGroup);
 ```

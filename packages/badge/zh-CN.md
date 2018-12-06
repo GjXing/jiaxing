@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { Badge, BadgeGroup } from 'jiaxing-N-ui';
+import { Badge, BadgeGroup } from 'jiaxing-n-ui';
 
 Vue.use(Badge);
 Vue.use(BadgeGroup);

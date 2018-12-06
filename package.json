@@ -1,8 +1,8 @@
 {
-  "name": "Rise-N-ui",
-  "version": "1.0.0",
+  "name": "N-ui",
+  "version": "1.0.2",
   "main": "packages/index.js",
-  "description": "j-ui is a h5 ui component for vue",
+  "description": "n-ui is a h5 ui component for vue",
   "author": "郭佳兴 <jiaxing2658@sina.com>",
   "license": "jiaxing",
   "scripts": {
@@ -11,6 +11,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+
     "vue": "^2.5.17"
   },
   "devDependencies": {

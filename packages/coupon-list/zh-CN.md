@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { CouponCell, CouponList } from 'jiaxing-N-ui';
+import { CouponCell, CouponList } from 'jiaxing-n-ui';
 
 Vue.use(CouponCell).use(CouponList);
 ```

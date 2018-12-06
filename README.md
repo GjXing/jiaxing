@@ -19,7 +19,7 @@ import 'jiaxing-n-ui/packages/x-css/lib/index.css' //样式
 Vue.use(Nui) // 使用
 ```
 
-官网地址：[https://gjxing.github.io/jiaxing/](https://healen.github.io/xui)
+官网地址：[https://gjxing.github.io/jiaxing/](https://gjxing.github.io/xui)
 
 
 

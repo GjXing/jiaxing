@@ -29,8 +29,11 @@
         <div v-if="isDef(num)" :class="b('num')">x {{ num }}</div>
       </div>
     </div>
-    <div :class="b('footer')" v-if="$slots.footer">
-      <slot name="footer" />
+    <div :class="b('footer')" >
+      <slot name="footer" v-if="issolt">
+      	 <x-button size="mini">{{ edit }}</x-button>
+          <x-button size="mini">{{ del }}</x-button>
+      </slot>
     </div>
   </div>
 </template>
@@ -51,6 +54,9 @@ export default create({
     desc: String,
     thumb: String,
     title: String,
+    edit: String,
+    del: String,
+    issolt: Boolean,
     centered: Boolean,
     num: [Number, String],
     price: [Number, String],

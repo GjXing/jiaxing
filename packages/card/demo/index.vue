@@ -18,11 +18,12 @@
         :tag="tags"
         :desc="descs"
         :title='titles'
+        :edit='edit'
+        :del='del'
+        issolt
         :thumb="imageURL"
       />
         <div slot="footer">
-          <x-button size="mini">{{ edit }}</x-button>
-          <x-button size="mini">{{ del }}</x-button>
         </div>
       </x-card>
     </demo-block>

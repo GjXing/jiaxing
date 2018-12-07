@@ -2404,7 +2404,7 @@ textarea {
 
 .x-stepper__minus--disabled,
 .x-stepper__plus--disabled {
-	visibility: hidden;
+	/*visibility: hidden;*/
 	background-color: #f8f8f8;
 	border-color: #f8f8f8
 }

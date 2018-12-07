@@ -88,12 +88,20 @@ export default create({
 }
 .van-stepper__minus--disabled, .van-stepper__plus--disabled {
     background-color: #f8f8f8;
+
 }
 
 .x-stepper__minus--disabled{
 	    background-color: #f8f8f8!important;
     border-color: #f8f8f8!important;
+
+    
 }
+.x-stepper__minus.x-stepper__minus--disabled::before {
+	    background-color: #ccc!important;
+	
+    }
+    
 .van-sku__stock {
     display: inline-block;
     margin-right: 10px;

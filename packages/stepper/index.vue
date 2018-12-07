@@ -6,9 +6,9 @@
     />
     <input
       type="number"
-      readonly
-      :class="b('input',{'vhide':value<=0})"
+      :class="b('input')"
       :value="currentValue"
+      :disabled="disabled || disableInput"
       @input="onInput"
       @blur="onBlur"
     >
@@ -32,7 +32,7 @@ export default create({
     disableInput: Boolean,
     min: {
       type: [String, Number],
-      default: 0
+      default: 1
     },
     max: {
       type: [String, Number],
@@ -83,7 +83,7 @@ export default create({
   },
 
   methods: {
-    // filterBar illegal characters
+    // filter illegal characters
     format(value) {
       value = String(value).replace(/[^0-9\.-]/g, '');
       return value === '' ? 0 : this.integer ? Math.floor(value) : +value;

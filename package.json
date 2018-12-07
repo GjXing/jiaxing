@@ -1,6 +1,6 @@
 {
   "name": "N-ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "packages/index.js",
   "description": "n-ui is a h5 ui component for vue",
   "author": "郭佳兴 <jiaxing2658@sina.com>",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "jiaxing-n-ui": "^1.0.8",
+    "jiaxing-n-ui": "^1.0.9",
     "vue": "^2.5.17"
   },
   "devDependencies": {

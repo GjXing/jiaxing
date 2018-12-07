@@ -2,7 +2,7 @@
 
 ### 使用指南
 ``` javascript
-import { PullRefresh } from 'hjiaxing-n-uiealen-x-ui';
+import { PullRefresh } from 'jiaxing-n-ui';
 
 Vue.use(PullRefresh);
 ```

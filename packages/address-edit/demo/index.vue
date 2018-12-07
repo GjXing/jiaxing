@@ -6,10 +6,11 @@
         show-postal
         show-delete
         show-set-default
-        show-search-result
+        :show-search-result="showSearchResult"
         :search-result="searchResult"
         @save="onSave"
         @delete="onDelete"
+        @adressfocus="focus"
         @change-detail="onChangeDetail"
       />
     </demo-block>
@@ -55,6 +56,7 @@ import areaList from '../../area/demo/area';
   data() {
     return {
       areaList,
+      showSearchResult:false,
 basicUsage:'基础用法',
        searchResult: [{
         name: '黄龙万科中心',
@@ -77,10 +79,15 @@ basicUsage:'基础用法',
     onDelete() {
       this.$toast(this.$t('delete'));
     },
+    focus() {
+      this.showSearchResult=true
+    },
 
     onChangeDetail(val) {
 
       this.searchResult = val ? this.searchResult : [];
+      this.showSearchResult=false
+ 
     }
   }
 };

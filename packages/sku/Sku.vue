@@ -106,6 +106,7 @@
 import Vue from 'vue';
 import Popup from '../popup';
 import Toast from '../toast';
+import ImagePreview from '../image-preview';
 import SkuHeader from './components/SkuHeader';
 import SkuRow from './components/SkuRow';
 import SkuRowItem from './components/SkuRowItem';
@@ -273,13 +274,32 @@ export default create({
 
     skuTree() {
       return this.sku.tree || [];
+    },
+      imageList() {
+      const imageList = [this.goods.picture];
+      if (this.skuTree.length > 0) {
+        const treeItem = this.skuTree.filter(treeItem => treeItem.k_s === 's1')[0] || {};
+
+        if (!treeItem.v) {
+          return;
+        }
+
+        treeItem.v.forEach(vItem => {
+          if (vItem.imgUrl) {
+            imageList.push(vItem.imgUrl);
+          }
+        });
+      }
+
+      return imageList;
     }
+  
   },
 
   created() {
     const skuEventBus = new Vue();
     this.skuEventBus = skuEventBus;
-
+    skuEventBus.$on('sku:previewImage', this.onPreviewImage);
     skuEventBus.$on('sku:close', this.onClose);
     skuEventBus.$on('sku:select', this.onSelect);
     skuEventBus.$on('sku:numChange', this.onNumChange);
@@ -326,6 +346,27 @@ export default create({
       return this.$refs.skuMessages
         ? this.$refs.skuMessages.validateMessages()
         : '';
+    },
+ onPreviewImage(indexImage) {
+      const index = this.imageList.findIndex(image => {
+        return image === indexImage;
+      });
+
+      const cbParams = {
+        index,
+        imageList: this.imageList,
+        indexImage
+      };
+
+      this.$emit('preview-on', cbParams);
+
+      ImagePreview({
+        images: this.imageList,
+        startPosition: index,
+        onClose: () => {
+          this.$emit('preview-close', cbParams);
+        }
+      });
     },
 
     validateSku() {

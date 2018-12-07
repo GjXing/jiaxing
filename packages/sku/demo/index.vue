@@ -147,7 +147,7 @@ import { LIMIT_TYPE } from '../../../packages/sku/constants';
     	  title2: '自定义步进器相关配置',
       stepperTitle: '我要买',
       button1: '积分兑换',
-      button2: '买买买',
+      button2: '购买',
       showBase: false,
       showCustom: false,
       showStepper: false,

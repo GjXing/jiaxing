@@ -23,7 +23,7 @@
       </span>
     </field>
     <cell
-
+v-if="showSearchResult"
       v-for="express in searchResult"
       :key="express.name + express.address"
       :title="express.name"

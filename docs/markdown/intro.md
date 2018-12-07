@@ -1,6 +1,6 @@
 <div class="van-doc-intro">
   <h2>Nui</h2>
-  <p>基于Vue、可靠的移动H5端,UI框架</p>
+  <p>基于Vue、轻量的移动H5端,UI框架</p>
 </div>
 
 
@@ -16,4 +16,4 @@
 
 ### 浏览器支持
 
-现代浏览器以及 Android 5.0+, iOS 6+
+现代浏览器Ie8+以及 Android 5.0+, iOS 6+

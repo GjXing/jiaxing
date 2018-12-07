@@ -5,6 +5,7 @@
     @touchstart="onWrapperTouchStart"
     @touchend="onWrapperTouchEnd"
     @touchcancel="onWrapperTouchEnd"
+
   >
     <div v-if="showIndex" :class="b('index')">{{ active + 1 }}/{{ count }}</div>
     <swipe
@@ -124,6 +125,7 @@ export default create({
     },
 
     onWrapperTouchEnd(event) {
+
       event.preventDefault();
 
       const deltaTime = new Date() - this.touchStartTime;
@@ -220,6 +222,8 @@ export default create({
           this.startScale = 1;
 
           if (this.scale < 1) {
+
+          	
             this.resetScale();
           }
         }
@@ -232,6 +236,7 @@ export default create({
     },
 
     onChange(active) {
+
       this.resetScale();
       this.active = active;
     },

@@ -8,6 +8,7 @@
         :min="1"
         :max="stepperLimit"
         :disable-input="disableStepperInput"
+        :disable="disableStatu"
         @overlimit="onOverLimit"
         @change="onChange"
       />
@@ -32,6 +33,7 @@ export default create({
   },
 
   props: {
+  	disableStatu:Boolean,
     skuEventBus: Object,
     skuStockNum: Number,
     selectedSku: Object,

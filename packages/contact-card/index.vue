@@ -9,8 +9,8 @@
   >
     <template v-if="type === 'add'">{{ addText || addText }}</template>
     <template v-else>
-      <div>{{ name }}：{{ name }}</div>
-      <div>{{ tel }}：{{ tel }}</div>
+      <div>{{ titleone }}：{{ name }}</div>
+      <div>{{ titletwo }}：{{ tel }}</div>
     </template>
   </cell>
 </template>
@@ -24,6 +24,8 @@ export default create({
   props: {
     tel: String,
     name: String,
+    titleone: String,
+    titletwo: String,
     addText: String,
     editable: {
       type: Boolean,

@@ -13,17 +13,46 @@
       :style="wrapperStyle"
       @transitionend="swipe = false"
     >
-      <div v-if="leftWidth" :class="b('left')" @click.stop="onClick('left')">
+      <div
+        v-if="leftWidth"
+        :class="b('left')"
+        @click.stop="onClick('left')"
+      >
         <slot name="left" />
       </div>
       <slot />
-      <div v-if="rightWidth" :class="b('right')" @click.stop="onClick('right')">
+      <div
+        v-if="rightWidth"
+        :class="b('right')"
+        @click.stop="onClick('right')"
+      >
         <slot name="right" />
       </div>
     </div>
   </div>
 </template>
-
+<style type="text/css">
+	.x-swipe-cell__right{
+	 color: #fff;
+    font-size: 15px;
+    width: 65px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    background-color: #f44;
+}
+	.x-swipe-cell__left{
+	    color: #fff;
+    font-size: 15px;
+    width: 65px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    background-color: #f44;
+}
+</style>
 <script>
 import create from '../utils/create';
 import Clickoutside from '../utils/clickoutside';
@@ -39,14 +68,8 @@ export default create({
   props: {
     onClose: Function,
     disabled: Boolean,
-    leftWidth: {
-      type: Number,
-      default: 0
-    },
-    rightWidth: {
-      type: Number,
-      default: 0
-    }
+    leftWidth: Number,
+    rightWidth: Number
   },
 
   directives: {

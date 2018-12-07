@@ -238,6 +238,10 @@ export default create({
       this.errorInfo[key] = false;
       this.detailFocused = key === 'addressDetail';
       this.$emit('focus', key);
+    if(key=="addressDetail"){
+      this.$emit('adressfocus', key);
+    	
+    }
     },
 
     onChangeDetail(val) {

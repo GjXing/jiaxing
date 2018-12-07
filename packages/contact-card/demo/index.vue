@@ -5,6 +5,9 @@
         :type="cardType"
         :name="currentContact.name"
         :tel="currentContact.tel"
+       :titleone="titleone"
+       :titletwo="titletwo"
+       
         @click="showList = true"
       />
 
@@ -16,6 +19,7 @@
         <x-contact-list
           v-model="chosenContactId"
           :list="list"
+          :addText="addText"
           @add="onAdd"
           @edit="onEdit"
           @select="onSelect"
@@ -39,6 +43,9 @@
     <demo-block :title="uneditable">
       <x-contact-card
         type="edit"
+         :titleone="titleone"
+       :titletwo="titletwo"
+       
         :name="mockContact.name"
         :tel="mockContact.tel"
         :editable="false"
@@ -68,12 +75,15 @@
 
   data() {
     return {
+    	addText:'新建联系人',
       chosenContactId: null,
+      titleone:'姓名',
+      titletwo:'电话',
       editingContact: {},
       showList: false,
       showEdit: false,
       isEdit: false,
-      name: '张三',
+      name: '佳兴',
       uneditable:'不可编辑',
       list: []
     };
@@ -83,7 +93,7 @@
     mockContact() {
       return {
         name: this.name,
-        tel: '13000000000',
+        tel: '17611382222',
         id: 0
       };
     },

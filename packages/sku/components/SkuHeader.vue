@@ -1,6 +1,7 @@
 <template>
-  <div  class="van-hairline--bottom">
-    <div :class="b('img-wrap')">
+  <div  class="van-hairline--bottom headershop">
+    <div :class="b('img-wrap')"
+    	 @click="previewImage">
       <img :src="goodsImg" >
     </div>
     <div :class="b('goods-info')">
@@ -49,7 +50,11 @@ export default create({
       if (matchedSku && matchedSku.imgUrl) {
         return matchedSku.imgUrl;
       }
+    },
+     previewImage() {
+      this.skuEventBus.$emit('sku:previewImage', this.goodsImg);
     }
+
   }
 });
 </script>
@@ -61,13 +66,17 @@ export default create({
     color: #969799;
     position: absolute;
     text-align: center;
+    border-radius: 50%;
+}
+	.x-icon.x-icon-close.van-sku__close-icon::before{
+	content: "\F015";
 }
 .van-sku-group-container{
-	margin-left: 15px;
+
     padding: 12px 0 2px;
 }
 .van-sku-stepper-stock{
-	margin-left: 15px;
+
     padding: 12px 0 2px;
 }
 .van-sku__stepper {
@@ -80,9 +89,10 @@ export default create({
 .van-stepper__minus--disabled, .van-stepper__plus--disabled {
     background-color: #f8f8f8;
 }
-.van-stepper__input[disabled] {
-    color: #c8c9cc!important;
-    background-color: #f8f8f8!important;
+
+.x-stepper__minus--disabled{
+	    background-color: #f8f8f8!important;
+    border-color: #f8f8f8!important;
 }
 .van-sku__stock {
     display: inline-block;
@@ -103,14 +113,26 @@ export default create({
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 999;
+
 	width: 100%;
 }
 .van-sku-actions{
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 999;
+
 	width: 100%;
 }
+.headershop{
+	padding-left: 15px;
+}
+.van-sku__goods-price {
+    color: #f44;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.van-sku-body{
+	overflow: scroll!important;
+}
+
 </style>

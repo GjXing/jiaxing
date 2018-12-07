@@ -43,3 +43,12 @@ export default create({
   }
 });
 </script>
+<style type="text/css">
+	
+	.x-badge-group{
+		    width: auto;
+    margin: 0 15px;
+
+    background-color: #fff;
+	}
+</style>

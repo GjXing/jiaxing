@@ -1,14 +1,14 @@
 {
-	"isCheck": true,
+	"isCheck": false,
 	"showLabel": true,
 	"adModal": false,
 	"searchAdArr": [
 		
 	],
 	"show": {
-		"showWebUrlList": false,
+		"showWebUrlList": true,
 		"showPlayBox": true,
-		"showDownUrlList": false
+		"showDownUrlList": true
 	},
     "adOk":false,
 	"shareMsg": "点进去免费看所有电影电视剧哦~",

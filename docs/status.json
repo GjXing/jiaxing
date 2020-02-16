@@ -7,8 +7,8 @@
 	],
 	"show": {
 		"showWebUrlList": false,
-		"showPlayBox": false,
-		"showDownUrlList": false
+		"showPlayBox": true,
+		"showDownUrlList": true
 	},
     "adOk":false,
 	"shareMsg": "点进去免费看所有电影电视剧哦~",

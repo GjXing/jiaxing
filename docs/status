@@ -1,0 +1,35 @@
+{
+	"isCheck": false,
+	"showLabel": true,
+	"adModal": false,
+	"searchAdArr": [
+		
+	],
+	"show": {
+		"showWebUrlList": true,
+		"showPlayBox": true,
+		"showDownUrlList": true
+	},
+    "adOk":false,
+	"shareMsg": "点进去免费看所有电影电视剧哦~",
+    "noticeMsg1":"有问题请联系客服哦~",
+    "noticeMsg2":"如遇播放卡顿 请切换线路1  线路3 试试~",
+	"getPlayAppId": "",
+	"getGroupImg": "https://vrroutine.vrle.cc/public/uploads/store/tou/erweima.jpg",
+	"adList": [],
+	"message": [],
+	"showPlayBox": true,
+	"zanImgUrl": "https://gjxing.github.io/Nui/img/0200216124016.jpg",
+	"kefuImgUrl": "https://gjxing.github.io/Nui/img/0200216124016.jpg",
+	"showPrevAdArr": [
+		2
+	],
+    "friendTips":"注意：播放卡顿请切换线路1 线路3试试，这三条线路播放速度不同 更新速度 也不同 请您切换线路自行查看 ~有任何问题都可以加客服为您解决~",
+	"zanBtnText": "提升播放速度",
+	"zanImg": "https://gjxing.github.io/Nui/img/0200216124016.jpg",
+	"activityImg": "https://gjxing.github.io/Nui/img/0200216124016.jpg",
+	"activityBtnText": "提升播放速度~~",
+	"randomShowVideoAd": 2,
+	"movieAppId": "wx7ee9dd145f40e829",
+	"msg": "联系客服~"
+}

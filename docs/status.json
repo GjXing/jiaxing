@@ -7,7 +7,7 @@
 	],
 	"show": {
 		"showWebUrlList": false,
-		showmore: false,
+		"showmore": false,
 		"showPlayBox": false,
 		"showDownUrlList": false
 	},

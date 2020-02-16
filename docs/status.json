@@ -6,7 +6,7 @@
 		
 	],
 	"show": {
-		"showWebUrlList": true,
+		"showWebUrlList": false,
 		"showPlayBox": true,
 		"showDownUrlList": true
 	},
